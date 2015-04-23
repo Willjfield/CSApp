@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invitation Round 1</title>
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <script src="../scripts/jquery-2.1.3.min.js"></script>
+  </head>
+   <div class = "fullScreenDiv">
+    <body class = "Grey">
+    <p class="centeredHor" id="padded">
+
+    <a href="../FightInProgress.html"> <img class="invIcons" src="../images/InvCol.png"></a>
+    <div class = "topText"><div id = "fighter"></div></div>
+  
+    </body>
+</div>
+  <script type="text/javascript">
+  if(sessionStorage.fighter=="Marcus"){$("#fighter").replaceWith("Marcus receives an invitation to fight in the Colosseum, the largest amphitheater ever built. Marcus has dreamed of this day ever since he saw the Colosseum open when he was a teenager.");}
+  else if(sessionStorage.fighter=="Yonatan"){$("#fighter").replaceWith("Yonatan receives an invitation to fight in the Colosseum, the largest amphitheater ever built. This is his chance to prove that, while his people may have been conquered, he can still fight as well as the best Roman warriors.");}
+  else if(sessionStorage.fighter=="Flavia"){$("#fighter").replaceWith("Flavia eceives an invitation to fight in the Colosseum, the largest amphitheater ever built. If she wins, even a lowly slave like her may have the potential to gain freedom and respect.");}
+  else if(sessionStorage.fighter=="Valerius"){$("#fighter").replaceWith("Valerius receives an invitation to fight in the Colosseum, the largest amphitheater ever built. He looks forward to hearing the sound of 50,000 people chanting his name.");}
+  sessionStorage.level = "col";
+  </script>
+  
+</html>

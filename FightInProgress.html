@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">$('body').css('cursor', 'none');</script>
+    <title>Fight in Progress</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="scripts/timer.jquery.js"></script>
+  </head>
+  <div class = "fullScreenDiv">
+  <body class = GreyDk>
+    <div class = "centered" ><font size="50" >Fight in Progress</font></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    setTimeout(function() {
+    if(sessionStorage.level == "small"){
+        if(Math.random()>.5){
+         window.location.href = "outcome/1B.html";
+        }else{
+          window.location.href = "outcome/1G.html";
+        };
+    }; 
+
+    if(sessionStorage.level == "medium"){
+        if(Math.random()>.5){
+         window.location.href = "outcome/2B.html";
+        }else{
+          window.location.href = "outcome/2G.html";
+        };
+    }; 
+
+    if(sessionStorage.level == "col"){
+         window.location.href = "outcome/F.html";
+    }; 
+    }, 5000);
+      
+    </script>
+</html>

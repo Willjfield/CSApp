@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <title>Introduction</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <div class = "fullScreenDiv">
+  <body class = "Grey">
+  <p class="centeredHor" id="padded">
+    <br>
+    <iframe width = "1000" height = "600" src="cartoiframe.html"></iframe>
+    <p id="p1" class = "bottomText">
+
+   Welcome to Rome in the year 80 AD. The empire is expanding rapidly and with it, Roman wealth, infrastructure and culture are introduced to the masses of Europe. 
+   <br><br><img src ="images/nextButton.png" class = "nextButton">
+    </p>
+    <p id="p2" class = "bottomText">Entertainment is an integral part of this culture and one of the most popular forms of entertainment is gladiatorial battle. Hundreds of ampitheaters, both small and large, are built all over the empire to stage executions, beast hunts and gladiatorial fights.
+    <br><img src ="images/nextButton.png" class = "nextButton">
+    </p>
+    <p id="p3" class = "bottomText">Four young gladiators, scattered throughout the empire are now entering this brutal world: <b>Flavia</b>, the gladiatrix, <b>Valerius</b>, the struggling poor, <b>Yonatan</b>, the prisoner of war, and <b>Marcus</b>, the aristocrat. <br><br>
+    Which one do you want to follow?
+  </p>
+    </p>
+  <div id = "button">
+   <a class = "dark" href="FighterMenu.html"><div class="button" id="lowerRight"> Continue </div></a>
+ </div>
+   <script type="text/javascript">
+   if(sessionStorage.testVar == "Test Var")
+   console.log("Success! "+ sessionStorage.testVar)</script>
+  </body>
+</div>
+<script>
+      $("#p2").hide();
+      $("#p3").hide();
+      $("#button").hide();
+
+      $( "#p1" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").show();
+        $("#p3").hide();
+      });
+
+      $( "#p2" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").hide();
+        $("#p3").show();
+        $("#button").show();
+      });
+
+    </script>
+</html>

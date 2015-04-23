@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invitation Round 1</title>
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <script src="../scripts/jquery-2.1.3.min.js"></script>
+  </head>
+   <div class = "fullScreenDiv">
+    <body class = "Grey">
+    
+      <div class = "topText"><div id = "fighter"></div></div>
+      <p class="centeredHor" id="padded">
+    <a href="../FightInProgress.html"> <img class="invIcons" src="../images/InvSmCon.png"></a>
+    <a href="../FightInProgress.html"> <img class="invIcons" src="../images/InvSmEmp.png"></a>
+    
+  
+    </body>
+</div>
+  <script type="text/javascript">
+  if(sessionStorage.fighter=="Marcus"){$("#fighter").replaceWith("Marcus receives two invitations to games that will be held at small amphitheaters on the Iberian Peninsula, in the western part of the empire. Though small, they could be his chance to prove himself in battle. Which invitation do you want to see him accept?");}
+  else if(sessionStorage.fighter=="Yonatan"){$("#fighter").replaceWith("Yonatan receives two invitations to games that will be held at small amphitheaters on the Iberian Peninsula, in the western part of the empire. He has prepared for years to fight Romans and he will finally have the chance to try. Which invitation do you want to see him accept?");}
+  else if(sessionStorage.fighter=="Flavia"){$("#fighter").replaceWith("Flavia receives two invitations to games that will be held at small amphitheaters on the Iberian Peninsula, in the western part of the empire. She never wanted to fight, but she knows she must in order to save herself. Which invitation do you want to see her accept?");}
+  else if(sessionStorage.fighter=="Valerius"){$("#fighter").replaceWith("Valerius receives two invitations to games that will be held at small amphitheaters on the Iberian Peninsula, in the western part of the empire. He has trained his whole life and believes this could be his chance to prove himself worth of status in Rome. Which invitation do you want to see him accept?");}
+  sessionStorage.level = "small";
+  </script>
+  
+</html>
