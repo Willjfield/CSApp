@@ -13,27 +13,40 @@
     </div>
   </body>
   <script type="text/javascript">
+    var outcome;
+
+    if(Math.random()>.5){
+      outcome=0;
+      localStorage.playvid = localStorage.fstyle+Math.floor((Math.random() * 3) + 1)+"b";
+      console.log(localStorage.playvid);
+    }else{
+      outcome=1
+      localStorage.playvid = localStorage.fstyle+Math.floor((Math.random() * 3) + 1)+"g";
+      console.log(localStorage.playvid);
+    };
+
     setTimeout(function() {
-    if(sessionStorage.level == "small"){
-        if(Math.random()>.5){
+    if(localStorage.level == "small"){
+        if(outcome==0){
          window.location.href = "outcome/1B.html";
         }else{
           window.location.href = "outcome/1G.html";
         };
     }; 
 
-    if(sessionStorage.level == "medium"){
-        if(Math.random()>.5){
+    if(localStorage.level == "medium"){
+        if(outcome==0){
          window.location.href = "outcome/2B.html";
         }else{
           window.location.href = "outcome/2G.html";
         };
     }; 
 
-    if(sessionStorage.level == "col"){
+    if(localStorage.level == "col"){
          window.location.href = "outcome/F.html";
     }; 
-    }, 5000);
+    localStorage.playvid="f";
+    }, 15000);
       
     </script>
 </html>

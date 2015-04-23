@@ -5,9 +5,9 @@
 	"main": "index.html",
 	"window":{
 		//"kiosk": true,
-		"fullscreen": true,
+		"fullscreen": false,
         "frame": true,
-        "toolbar": false
+        "toolbar": true
     }
 
 }

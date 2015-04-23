@@ -2,8 +2,7 @@
 <html>
 	
   <head>
-  	<script src="scripts/jquery-2.1.3.min.js"></script>
-  	
+  	<script src="scripts/jquery-2.1.3.min.js"></script> 	
   	<script src="scripts/p5.min.js"></script>
   	<script src="scripts/p5.dom.js"></script>
   	<script src="scripts/p5.sound.js"></script>
@@ -14,21 +13,27 @@
 <div class = "fullScreenDiv">
 	
 <script type="text/javascript">
+	console.log(localStorage.playvid);
 	var fight;
 
 	function setup() {
 	createCanvas(1920, 1080);
 	// specify multiple formats for different browsers
 	fight = createVideo('../videos/Output_Ret_W_Hop_L.mov');
-	fight.loop(); // set the video to loop and start playing
+	 // set the video to loop and start playing
 	fight.hide(); // by default video shows up in separate dom 
 	              // element. hide it and draw it to the canvas 
 	              // instead
 	}
 
 	function draw() {
-	background(0);
-	image(fight,0,0); // draw the video frame to canvas
+		background(0);
+		if(localStorage.playvid=="t"){	
+			fight.play();
+			image(fight,0,0); // draw the video frame to canvas
+		}else{
+			background(0);
+		}
 	}
 </script>
   <body>
