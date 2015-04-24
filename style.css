@@ -251,3 +251,55 @@ iframe{
 	width: value;
 	height: value;
 }
+
+/*intro*/
+#introp1{
+	color: #000000;
+	font-size:30px;
+	background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding:20px;
+    transform: translate(-50%, -50%);
+}
+#introbtn1{
+	font-size:30px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    padding:20px;
+    transform: translate(-50%, -50%);
+}
+#introp2{
+	color: #000000;
+	font-size:25px;
+	background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    top: 100px;
+    padding:20px;
+    width:500px;
+    transform: translate(20%, -30%);
+}
+#instructions{
+	color: #000000;
+	font-size:20px;
+	font-style: italic;
+	background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    top: 100px;
+    padding:20px;
+    width:500px;
+    transform: translate(20%, 220%);
+}
+#introp3{
+	color: #000000;
+	background-opacity: .5;
+	font-size:30px;
+	background-color: white;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    padding:20px;
+    transform: translate(-50%, -50%);
+}

@@ -10,16 +10,16 @@
   <body class = "Grey">
   <p class="centeredHor" id="padded">
     <br>
-    
-    <p id="p1" class = "bottomText">
-
-   Welcome to Rome in the year 80 AD. The empire is expanding rapidly and with it, Roman wealth, infrastructure and culture are introduced to the masses of Europe. 
-   <br><br><img src ="images/nextButton.png" class = "nextButton">
+    <p id="introp1">
+   Welcome to Rome in the year 80 AD. The empire is expanding rapidly and with it, Roman wealth, infrastructure and culture are introduced to the masses of Europe.
     </p>
-    <p id="p2" class = "bottomText">Entertainment is an integral part of this culture and one of the most popular forms of entertainment is gladiatorial battle. Hundreds of ampitheaters, both small and large, are built all over the empire to stage executions, beast hunts and gladiatorial fights.
-    <br><img src ="images/nextButton.png" class = "nextButton">
+    <img id="introbtn1" src="images/intro/btn_explore.png">
+  </p>
+    <p id="instructions"> Pan and zoom to explore the map. <br>Click the amphitheaters to learn more about them.</p>
+    <p id="introp2">Entertainment is an integral part of this culture and one of the most popular forms of entertainment is gladiatorial battle. Hundreds of ampitheaters, both small and large, are built all over the empire to stage executions, beast hunts and gladiatorial fights.
+    <br>
     </p>
-    <p id="p3" class = "bottomText">Four young gladiators, scattered throughout the empire are now entering this brutal world: <b>Flavia</b>, the gladiatrix, <b>Valerius</b>, the struggling poor, <b>Yonatan</b>, the prisoner of war, and <b>Marcus</b>, the aristocrat. <br><br>
+    <p id="introp3">Four young gladiators, scattered throughout the empire are now entering this brutal world: <b>Flavia</b>, the gladiatrix, <b>Valerius</b>, the struggling poor, <b>Yonatan</b>, the prisoner of war, and <b>Marcus</b>, the aristocrat. <br><br>
     Which one do you want to follow?
   </p>
     </p>
@@ -31,20 +31,25 @@
   </body>
 </div>
 <script>
-      $("#p2").hide();
-      $("#p3").hide();
+      $("#introp2").hide();
+      $("#introp3").hide();
       $("#button").hide();
+      $("#instructions").hide();
 
-      $( "#p1" ).on("click",function() {
-        $("#p1").hide();
-        $("#p2").show();
-        $("#p3").hide();
+      $( "#introbtn1" ).on("click",function() {
+        $("#introp1").hide();
+        $("#introbtn1").hide();
+        $("#introp2").show();
+        $("#introp3").hide();
+
+        $("#instructions").show();
+        $("#btn_next").show();
       });
 
-      $( "#p2" ).on("click",function() {
-        $("#p1").hide();
-        $("#p2").hide();
-        $("#p3").show();
+      $( "#introp2" ).on("click",function() {
+        $("#introp1").hide();
+        $("#introp2").hide();
+        $("#introp3").show();
         $("#button").show();
       });
 
