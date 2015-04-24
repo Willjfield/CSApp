@@ -15,13 +15,13 @@
   <script type="text/javascript">
     var outcome;
 
-    if(Math.random()>.5){
+    if(Math.random()>.4){
       outcome=0;
-      localStorage.playvid = localStorage.fstyle+Math.floor((Math.random() * 3) + 1)+"b";
+      localStorage.playvid = localStorage.level+localStorage.fstyle+"b";
       console.log(localStorage.playvid);
     }else{
       outcome=1
-      localStorage.playvid = localStorage.fstyle+Math.floor((Math.random() * 3) + 1)+"g";
+      localStorage.playvid = localStorage.level+localStorage.fstyle+"g";
       console.log(localStorage.playvid);
     };
 

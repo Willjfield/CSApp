@@ -3,10 +3,10 @@
    *  CartoDB infowindow dark styles
    */
 body{
-	cursor: none;
+	/*cursor: none;*/
 }
   div.cartodb-popup.dark .jspContainer:after {
-  	cursor: none;
+  	/*cursor: none;*/
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
     background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
     background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
@@ -15,7 +15,7 @@ body{
   }
 
   div.cartodb-popup.dark .jspContainer:before {
-  	cursor: none;
+  	/*cursor: none;*/
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
     background: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,0));
     background: -moz-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,0));
@@ -71,12 +71,12 @@ body{
   /* NEW CartoDB 2.0 dark popups */
 
   div.cartodb-popup.v2.dark {
-  	cursor: none;
+  	/*cursor: none;*/
     background:#000000;
   }
 
   div.cartodb-popup.v2.dark:before {
-  	cursor: none;
+  	/*cursor: none;*/
     border-top-color:black;
   }
 
@@ -96,23 +96,23 @@ body{
   /* Hello IE */
   @media \0screen\,screen\9 {
     div.cartodb-popup.v2.dark {
-    	cursor: none;
+    	/*cursor: none;*/
       border:4px solid #AAA;
     }
 
     div.cartodb-popup.v2.dark div.cartodb-popup-tip-container {
-    	cursor: none;
+    	/*cursor: none;*/
       border-top:18px solid #000;
     }
 
     div.cartodb-popup.v2.dark a.cartodb-popup-close-button {
-    	cursor: none;
+    	/*cursor: none;*/
       border:2px solid #AAA;
       color:white;
     }
 
     div.cartodb-popup.v2.dark a.cartodb-popup-close-button:hover {
-    	cursor: none;
+    	/*cursor: none;*/
       border:2px solid #BBB;
     }
   }
@@ -121,13 +121,13 @@ body{
    */
 
   div.cartodb-infowindow {
-  	cursor: none;
+  	/*cursor: none;*/
     position: absolute;
     z-index: 12;
   }
 
   div.cartodb-popup {
-  	cursor: none;
+  	/*cursor: none;*/
     position:relative;
     width:226px;
     height:auto;
@@ -137,7 +137,7 @@ body{
   }
 
   div.cartodb-popup div.cartodb-popup-content-wrapper {
-  	cursor: none;
+  	/*cursor: none;*/
     width:190px;
     max-width: 190px;
     padding:12px 19px 12px 19px;
@@ -146,7 +146,7 @@ body{
   }
 
   div.cartodb-popup div.cartodb-popup-content {
-  	cursor: none;
+  	/*cursor: none;*/
     display:block;
     width:190px;
     max-width: 190px;
@@ -165,7 +165,7 @@ body{
 
   div.cartodb-popup .jspContainer:after,
   div.cartodb-popup .jspContainer:before {
-  	cursor: none;
+  	/*cursor: none;*/
     content:'';
     position:absolute;
     left:0;
@@ -177,7 +177,7 @@ body{
   }
 
   div.cartodb-popup .jspContainer:after {
-  	cursor: none;
+  	/*cursor: none;*/
     bottom:0px;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)));
     background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
@@ -188,7 +188,7 @@ body{
   }
 
   div.cartodb-popup .jspContainer:before {
-  	cursor: none;
+  	/*cursor: none;*/
     top:0px;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
     background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
@@ -199,14 +199,14 @@ body{
   }
 
   div.cartodb-popup div.cartodb-popup-tip-container {
-  	cursor: none;
+  	/*cursor: none;*/
     width:226px;
     height:20px;
     background:url('../img/light.png') no-repeat 0 0;
   }
 
   div.cartodb-popup a.cartodb-popup-close-button {
-  	cursor: none;
+  	/*cursor: none;*/
     position:absolute;
     top:-9px;
     right:-9px;
@@ -3698,20 +3698,20 @@ div.cartodb-timeslider .ui-slider-vertical .ui-slider-range-max {
 .leaflet-zoom-box,
 .leaflet-image-layer,
 .leaflet-layer {
-	cursor: none;
+	/*cursor: none;*/
 	position: absolute;
 	left: 0;
 	top: 0;
 	}
 .leaflet-container {
-	cursor: none;
+	/*cursor: none;*/
 	overflow: hidden;
 	-ms-touch-action: none;
 	}
 .leaflet-tile,
 .leaflet-marker-icon,
 .leaflet-marker-shadow {
-	/*cursor: none;*/
+	/*/*cursor: none;*/*/
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	        user-select: none;
