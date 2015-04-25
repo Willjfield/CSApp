@@ -20,9 +20,14 @@ body{
 
 #trajTitle{
 	/*cursor: none;*/
-	color:white;
+	top: 150px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	color:blue;
 	font-family: "Trajan Pro 3";
 	font-size: 72px;
+	width: 100%;
+	padding-top:10px;
 }
 .Grey{
 	/*cursor: none;*/
@@ -310,3 +315,23 @@ iframe{
     padding:20px;
     
 }
+#nxtbtn2{
+	font-size:30px;
+    position: absolute;
+    bottom: -355%;
+    left: 280%;
+    padding:20px;
+    
+}
+#whichone{
+	color: #000000;
+	font-size:25px;
+	background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    bottom: 120px;
+    right: 15%;
+    padding:10px;
+    width:400px;
+    transform: translate(20%, -30%); 
+}
+

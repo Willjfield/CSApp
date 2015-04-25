@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html>
-	
-  <head>
-    <script src="scripts/jquery-2.1.3.min.js"></script>
-    <title>Center Stage</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
-  </head>
-<div class = "fullScreenDiv">
-  <body class = "BlueDk">
-    <img class="centered" src="images/CS_App_Logo.png">
-    <a href="intro.html" class ="light"><div class="buttonLt" id="lowerRight"> Continue </div></a>
-  </body>
-</div>
 <script type="text/javascript">
 var gui = require('nw.gui');
 gui.Window.open('video.html',{toolbar:false,  frame:true, fullscren: false});
 localStorage.playvid = "f";
 </script>
+  <head>
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <title>Introduction</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <div class = "fullScreenDiv">
+    <iframe id= "map1"width = "100%" height = "100%" src="cartoiframe.html"></iframe>
+    <iframe id= "map2"width = "100%" height = "100%" src="cartoiframe2.html"></iframe>
+     <iframe id= "map3"width = "100%" height = "100%" src="cartoiframe3.html"></iframe>
+  <body class = "Grey">
+  <p class="centeredHor" id="padded">
+    <br>
+    <p id="introp1">
+   Welcome to Rome in the year 80 AD. The empire is expanding rapidly and with it, Roman wealth, infrastructure and culture are introduced to the masses of Europe.
+    </p>
+    <img id="introbtn1" src="images/intro/btn_explore.png">
+    
+
+  </p>
+    <p id="instructions"> Pan and zoom to explore the map. <br>Click the amphitheaters to learn more about them.</p>
+    <p id="introp2">Entertainment is an integral part of this culture and one of the most popular forms of entertainment is gladiatorial battle. Hundreds of ampitheaters, both small and large, are built all over the empire to stage executions, beast hunts and gladiatorial fights.
+    <br>
+    <img id="nxtbtn" src="images/intro/btn_next.png">
+    </p>
+    <p id="introp3">Four young gladiators, scattered throughout the empire are now entering this brutal world: <b>Flavia</b>, the gladiatrix, <b>Valerius</b>, the struggling poor, <b>Yonatan</b>, the prisoner of war, and <b>Marcus</b>, the aristocrat.
+
+      <a href="FighterMenu.html"><img id="nxtbtn2" src="images/intro/btn_next.png"></a>
+    </p>
+     <p id = "whichone">
+    Which one do you want to follow?
+    </p>
+    </p>
+    
+   
+  </body>
+</div>
+
+<script>
+      window.parent.document.body.style.zoom = .75;
+      $("#introp2").hide();
+      $("#introp3").hide();
+      $("#button").hide();
+      $("#nxtbtn").hide();
+      $("#nxtbtn2").hide();
+      $("#instructions").hide();
+       $("#whichone").hide();
+
+      $( "#introbtn1" ).on("click",function() {
+        $("#introp1").hide();
+        $("#introbtn1").hide();
+        $("#introp2").show();
+        $("#introp3").hide();
+        $("#map1").hide();
+        $("#instructions").show();
+        $("#nxtbtn").show();
+      });
+
+      $( "#nxtbtn" ).on("click",function() {
+        $("#introp1").hide();
+        $("#introp2").hide();
+        $("#instructions").hide();
+        $("#map2").hide();
+        $("#introp3").show();       
+        $("#nxtbtn2").show();
+        $("#whichone").show();
+      });
+
+    </script>
 </html>

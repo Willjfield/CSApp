@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	
+  <head>
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <title>Center Stage</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+<div class = "fullScreenDiv">
+  <body class = "BlueDk">
+    <img class="centered" src="images/CS_App_Logo.png">
+    <a href="intro.html" class ="light"><div class="buttonLt" id="lowerRight"> Continue </div></a>
+  </body>
+</div>
+<script type="text/javascript">
+var gui = require('nw.gui');
+gui.Window.open('video.html',{toolbar:false,  frame:true, fullscren: false});
+localStorage.playvid = "f";
+</script>
+</html>

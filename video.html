@@ -28,7 +28,7 @@
 
 	function draw() {
 		background(0);
-		if(localStorage.playvid=="t"){	
+		if(localStorage.playvid!="f"){	
 			fight.play();
 			image(fight,0,0); // draw the video frame to canvas
 		}else{
