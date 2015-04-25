@@ -6,7 +6,9 @@
     <link type="text/css" rel="stylesheet" href="style.css">
   </head>
   <div class = "fullScreenDiv">
-    <iframe width = "100%" height = "100%" src="cartoiframe.html"></iframe>
+    <iframe id= "map1"width = "100%" height = "100%" src="cartoiframe.html"></iframe>
+    <iframe id= "map2"width = "100%" height = "100%" src="cartoiframe2.html"></iframe>
+     <iframe id= "map3"width = "100%" height = "100%" src="cartoiframe3.html"></iframe>
   <body class = "Grey">
   <p class="centeredHor" id="padded">
     <br>
@@ -18,6 +20,7 @@
     <p id="instructions"> Pan and zoom to explore the map. <br>Click the amphitheaters to learn more about them.</p>
     <p id="introp2">Entertainment is an integral part of this culture and one of the most popular forms of entertainment is gladiatorial battle. Hundreds of ampitheaters, both small and large, are built all over the empire to stage executions, beast hunts and gladiatorial fights.
     <br>
+    <img id="nxtbtn" src="images/intro/btn_next.png">
     </p>
     <p id="introp3">Four young gladiators, scattered throughout the empire are now entering this brutal world: <b>Flavia</b>, the gladiatrix, <b>Valerius</b>, the struggling poor, <b>Yonatan</b>, the prisoner of war, and <b>Marcus</b>, the aristocrat. <br><br>
     Which one do you want to follow?
@@ -34,21 +37,34 @@
       $("#introp2").hide();
       $("#introp3").hide();
       $("#button").hide();
+      $("#map2").hide();
+      $("#nxtbtn").hide();
       $("#instructions").hide();
 
       $( "#introbtn1" ).on("click",function() {
+        $( "#map2" ).focus();
         $("#introp1").hide();
         $("#introbtn1").hide();
         $("#introp2").show();
         $("#introp3").hide();
+        $("#map2").show(function() {
+          $( "#map2" ).focus();
+        });
+        $("#map1").hide();
 
         $("#instructions").show();
-        $("#btn_next").show();
+        $("#nxtbtn").show();
       });
 
-      $( "#introp2" ).on("click",function() {
+      $( "#nxtbtn" ).on("click",function() {
         $("#introp1").hide();
         $("#introp2").hide();
+        $("#instructions").hide();
+        $("#map2").hide();
+
+        $("#map3").show(function() {
+          $( "#map3" ).focus();
+        });
         $("#introp3").show();
         $("#button").show();
       });

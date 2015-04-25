@@ -294,12 +294,19 @@ iframe{
 }
 #introp3{
 	color: #000000;
-	background-opacity: .5;
-	font-size:30px;
-	background-color: white;
+	font-size:25px;
+	background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
-    top: 550px;
-    left: 50%;
+    top: 100px;
     padding:20px;
-    transform: translate(-50%, -50%);
+    width:500px;
+    transform: translate(20%, -30%);
+}
+#nxtbtn{
+	font-size:30px;
+    position: absolute;
+    bottom: -250%;
+    left: 280%;
+    padding:20px;
+    
 }
