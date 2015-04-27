@@ -29,6 +29,19 @@ body{
 	width: 100%;
 	padding-top:10px;
 }
+
+#trajTitleWeapons{
+	/*cursor: none;*/
+	top: 250px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	color:blue;
+	font-family: "Trajan Pro 3";
+	font-size: 72px;
+	width: 100%;
+	padding-top:10px;
+}
+
 .Grey{
 	/*cursor: none;*/
 	 background-color: #C8D2D7;
@@ -186,7 +199,7 @@ a.dark:active {
 
 .fighterIcons{
 	/*cursor: none;*/
-	margin:20px;
+	margin:25px;
 	width:300px;
 }
 
@@ -320,8 +333,7 @@ iframe{
     position: absolute;
     bottom: -355%;
     left: 280%;
-    padding:20px;
-    
+    padding:20px;   
 }
 #whichone{
 	color: #000000;
@@ -333,5 +345,13 @@ iframe{
     padding:10px;
     width:400px;
     transform: translate(20%, -30%); 
+}
+
+.ficoncr{
+    position: absolute;
+    right:50%;
+    padding:10px;
+    width:200px;
+    transform: translate(50%, -30%); 
 }
 

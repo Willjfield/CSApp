@@ -6,23 +6,28 @@
     <title>Style of Fighter</title>
     <link type="text/css" rel="stylesheet" href="style.css">
   </head>
+  <img class = "fullScreenDiv" src="images/background.jpg">
     <div class = "fullScreenDiv">
   <body class = "BlueDk">
     <br>
     <br>
     <br>
     <br>
-       <h1 class = "centeredHor" id ="trajTitle">Choose the style of fighting</h1><br>
+    <div class = "ficoncr" id = "ficoncr"></div>
+    
+       <h1 class = "centeredHor" id ="trajTitleWeapons">Select Weapons</h1><br>
    <div class = "centered">
     <a href="fstyle/HopInfo.html"> <img class="fighterIcons" src="images/hoplom.jpg"></a>
     <a href="fstyle/SecInfo.html"><img class="fighterIcons" src="images/fs2.jpg"></a>
     <a href="fstyle/RetInfo.html"><img class="fighterIcons" src="images/Retiarius.jpg"></a>
 	   <a href="fstyle/DiaInfo.html"><img class="fighterIcons" src="images/fs3.jpg"></a>
 </div>
-    <a class = "light" href="index.html"><div class="buttonLt" id="lowerLeft"> Start Over </div></a>
   </body>
 
   <script type="text/javascript">
   console.log(localStorage.fighter);
+  var imgid;
+  imgid = "images/portrait/cr/"+localStorage.fighter+"IconCr.png";
+  $('#ficoncr').replaceWith("<img class = 'ficoncr' src="+imgid+">");
   </script>
 </html>
