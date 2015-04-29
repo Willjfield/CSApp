@@ -6,7 +6,7 @@
 	"window":{
 		//"kiosk": true,
 		"fullscreen": false,
-		"scale":-4,
+		//"scale":-4,
         "frame": true,
         "toolbar": true
     }

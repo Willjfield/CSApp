@@ -17,7 +17,9 @@ localStorage.playvid = "f";
   <body class = "Grey">
   <p class="centeredHor" id="padded">
     <br>
+    
     <p id="introp1">
+   <img id="mainlogo" src = "images/cslogo.png">
    Welcome to Rome in the year 80 AD. The empire is expanding rapidly and with it, Roman wealth, infrastructure and culture are introduced to the masses of Europe.
     </p>
     <img id="introbtn1" src="images/btns/btn_explore.png">
@@ -33,7 +35,7 @@ localStorage.playvid = "f";
     </p>
     <a href="FighterMenu.html"><img id="nxtbtn2" src="images/btns/btn_next.png"></a>
      <p id = "whichone">
-    Which one do you want to follow?
+    Continue to choose one to follow...
     </p>
     </p>
     
@@ -50,6 +52,7 @@ localStorage.playvid = "f";
       $("#nxtbtn2").hide();
       $("#instructions").hide();
        $("#whichone").hide();
+
 
       $( "#introbtn1" ).on("click",function() {
         $("#introp1").hide();

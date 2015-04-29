@@ -5,15 +5,17 @@
     <link type="text/css" rel="stylesheet" href="../style.css">
     <script src="../scripts/jquery-2.1.3.min.js"></script>
   </head>
-  <img class = "fullScreenDiv" src="../images/background.jpg">
+  <img class = "fullScreenDiv" src="../images/bg/back7.jpg">
+  <div class = "ficoncrside" id = "ficoncr"></div>
     <div class = "fullScreenDiv">
     <body class = "Grey">
     <p class="centeredHor" id="padded">
       <br>
-    <img width = "500" src="../images/fstyles/Sec.png"></a>
-    <div id = "p1" class = "bottomText">
-    The <i>secutor</i> ("pursuer") developed to fight the retiarius. He carried the tall rectangular shield and the gladius. The helmet of the secutor covered the entire face with the exception of two small eye-holes in order to protect his face from the thin prongs of the trident of his opponent. The helmet was also round and smooth so that the retiarius net could not get a grip on it.
+    <img class = "fstyles" src="../images/fstyles/Sec_tall.jpg"></a>
+    
     </p>
+    <div id = "p1" class = "info">
+    The <i>secutor</i> ("pursuer") developed to fight the retiarius. He carried the tall rectangular shield and the gladius. The helmet of the secutor covered the entire face with the exception of two small eye-holes in order to protect his face from the thin prongs of the trident of his opponent. The helmet was also round and smooth so that the retiarius net could not get a grip on it.
     </div>
     <br>
     <a  href="../inv/InvitationSmall.html"><img id = "selector" src="../images/btns/btn_select.png"></a>
@@ -24,5 +26,10 @@
       $( "#selector" ).on("click",function() {
         localStorage.fstyle = "sec";
       });
+      console.log(localStorage.fighter);
+      var imgid;
+      imgid = "../images/portrait/cr/"+localStorage.fighter+"IconCr.png";
+      $('#ficoncr').replaceWith("<img class = 'ficoncrside' src="+imgid+">");
+
     </script>
 </html>
