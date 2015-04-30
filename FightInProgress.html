@@ -20,11 +20,11 @@
 
     if(Math.random()>.6){
       outcome=0;
-      localStorage.playvid = localStorage.level+localStorage.fstyle+"b";
+      localStorage.playvid = localStorage.fstyle+localStorage.level+"b";
       console.log(localStorage.playvid);
     }else{
       outcome=1
-      localStorage.playvid = localStorage.level+localStorage.fstyle+"g";
+      localStorage.playvid = localStorage.fstyle+localStorage.level+"g";
       console.log(localStorage.playvid);
     };
 
@@ -49,7 +49,7 @@
          window.location.href = "outcome/F.html";
     }; 
     localStorage.playvid="f";
-    }, 2000);
+    }, 15000);
       
     </script>
 </html>

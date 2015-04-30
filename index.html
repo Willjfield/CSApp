@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <script type="text/javascript">
+if(sessionStorage.createGUI==null){
 var gui = require('nw.gui');
 gui.Window.open('video.html',{toolbar:false,  frame:true, fullscren: false});
+sessionStorage.createGUI = 1;
+}
 localStorage.playvid = "f";
 </script>
   <head>
@@ -44,7 +47,7 @@ localStorage.playvid = "f";
 </div>
 
 <script>
-      window.parent.document.body.style.zoom = .75;
+      //window.parent.document.body.style.zoom = .75;
       $("#introp2").hide();
       $("#introp3").hide();
       $("#button").hide();
