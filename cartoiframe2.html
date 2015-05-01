@@ -14,22 +14,27 @@ function main() {
         var ramphs = 'https://willjfield.cartodb.com/api/v2/viz/d837cb34-eb73-11e4-b7fd-0e0c41326911/viz.json';
         
         cartodb.createVis('map', ramphs, {
-          center_lat: 40,
-          center_lon: 12,
+          center_lat: 42,
+          center_lon: 15,
           search: true,
-          tiles_loader: true,
+          tiles_loader: false,
           layer_selector: true,
           https: true
         })
         .done(function(vis, layers) {
-
+          
           // Set max zoom
           vis.map.set({
             
-            zoom:5,
-            minZoom: 3,
-            maxZoom: 16
+            zoom:6,
+            minZoom: 5,
+            maxZoom: 8,
           });
+
+          layers[0].leafletMap.setMaxBounds([
+          [60, -30],
+          [25, 60]
+        ])
 
         })
         .error(function(err) {
