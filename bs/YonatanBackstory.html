@@ -20,19 +20,22 @@
 
     <div id = "p1" class = "info">
     Yonatan was born in the city of Jaffa in the kingdom of Judea, which was part of the Roman Empire. Growing up, he saw tensions rise between Jews and Roman rulers who restricted Jewish autonomy and began looting their holy sites. He saw family members take up arms and riot against the unjust conditions and heard stories of brave Jewish warriors who stood up to Romans.
-    <br><br><div id="bottomRight">1/4</div><img src ="../images/btns/btn_next_text.png" class = "nextButton">
+    <br><br><div id="bottomRight">1/4</div><img id = "n1" src ="../images/btns/btn_next_text.png" class = "nextButton">
+    
     </div>
     <div id = "p2" class = "info">
     When Yonatan was 12, his father was killed by Romans so he fled with his Mother to Jerusalem. Yonatan was brave but when the Romans laid seige to Jerusalem and the Jewish zealots ruined any hopes for negotiation. 
-    <br><br><div id="bottomRight">2/4</div><img src ="../images/btns/btn_next_text.png" class = "nextButton">
+    <br><br><div id="bottomRight">2/4</div><img src ="../images/btns/btn_next_text.png" id = "n2" class = "nextButton">
+    <img src ="../images/btns/btn_back_text.png" id = "b1" class = "backButton">
     </div>
     <div id = "p3" class = "info">
     Eventually, the Romans sacked Jerusalem. They slaughtered thousands of inhabitants and destroyed everything that was sacred to the Jews. Yonatan was captured by Romans. He was too young to be executed so they sold him into slavery. He felt lucky to be alive but ashamed that he had not died fighting for his peoples freedom.
-    <br><br><div id="bottomRight">3/4</div><img src ="../images/btns/btn_next_text.png" class = "nextButton">
+    <br><br><div id="bottomRight">3/4</div><img src ="../images/btns/btn_next_text.png" id = "n3" class = "nextButton">
+    <img src ="../images/btns/btn_back_text.png" id = "b2" class = "backButton">
     </div>
     <div id = "p4" class = "info">
     A Roman aristocrat, seeing Yonatan's health and vigor, offered to buy him and train him as a gladiator. Yonatan was enrolled in gladiator school in Rome at the age of 16. He knew he would never see his family again. He had lost everything and he wanted to fight.
-    <div id="bottomRightLast">4/4</div>
+    <div id="bottomRight">4/4</div><img src ="../images/btns/btn_back_text.png" id = "b3" class = "backButton">
   </div>
   </p>
     <a id = "selector" class = "dark" href="../StyleMenu.html"><img width = '300px' src ="../images/btns/btn_select.png"> </a>
@@ -50,7 +53,18 @@
       $("#ph3").hide();
       $("#ph4").hide();
 
-      $( "#p1" ).on("click",function() {
+      $( "#b1" ).on("click",function() {
+      $("#p1").show();
+      $("#ph1").show();
+      $("#p2").hide();
+      $("#p3").hide();
+      $("#p4").hide();
+      $("#ph2").hide();
+      $("#ph3").hide();
+      $("#ph4").hide();
+    });
+
+      $( "#n1" ).on("click",function() {
         $("#p1").hide();
         $("#ph1").hide();
         $("#p2").show();
@@ -58,7 +72,15 @@
         $("#p3").hide();
       });
 
-      $( "#p2" ).on("click",function() {
+      $( "#b2" ).on("click",function() {
+        $("#p1").hide();
+        $("#ph1").hide();
+        $("#p2").show();
+        $("#ph2").show();
+        $("#p3").hide();
+      });
+
+      $( "#n2" ).on("click",function() {
         $("#p1").hide();
         $("#p2").hide();
         $("#ph2").hide();
@@ -66,7 +88,17 @@
         $("#ph3").show();
       });
 
-      $( "#p3" ).on("click",function() {
+      $( "#b3" ).on("click",function() {
+        $("#p1").hide();
+        $("#p2").hide();
+        $("#ph2").hide();
+        $("#p3").show();
+        $("#ph3").show();
+        $("#p4").hide();
+        $("#ph4").hide();
+      });
+
+      $( "#n3" ).on("click",function() {
         $("#p1").hide();
         $("#p2").hide();
         $("#ph2").hide();
@@ -75,6 +107,7 @@
         $("#p4").show();
         $("#ph4").show();
       });
+      
 
       $( "#selector" ).on("click",function() {
         localStorage.fighter = "Yonatan";

@@ -17,17 +17,19 @@
     <img id = "ph3" class = "fstyles" src="../images/biophotos/fla3.jpg"></a>
     <div id = "p1" class = "info">
     Flavia was born into slavery. She worked for a corrupt aristocrat in the western part of the empire and never knew her parents. Flavia often wished to be sold because she believed that anyone would be a better master. She may even be able to earn her freedom if she worked for someone else.
-    <br><br><div id="bottomRight">1/3</div><img src ="../images/btns/btn_next_text.png" class = "nextButton">
+    <br><br><div id="bottomRight">1/3</div><img src ="../images/btns/btn_next_text.png" id = "n1" class = "nextButton">
+    
     </div>
     
     <div id = "p2" class = "info">
     Flavia finally was sold. But, she was sold to one of the most ill-reputed gladiator managers in the city. Many of her first fights were at wild parties that aristocrats threw. They didn't make her fight male gladiators but instead found it amusing to have her fight groups of children and wild animals.
-    <br><br><div id="bottomRight">2/3</div><img src ="../images/btns/btn_next_text.png" class = "nextButton">
+    <br><br><div id="bottomRight">2/3</div><img src ="../images/btns/btn_next_text.png" id = "n2" class = "nextButton">
+    <img src ="../images/btns/btn_back_text.png" id = "b1" class = "backButton">
     </div>
     
     <div id = "p3" class = "info">
     She hated what her life had become but fought as hard as she could because she knew that if she started losing fights, she would be worthless to the manager and might be put to even more degrading work.
-    <div id="bottomRightLast">3/3</div>
+    <div id="bottomRight">3/3</div><img src ="../images/btns/btn_back_text.png" id = "b2" class = "backButton">
     </div>
 
     </p>
@@ -42,7 +44,16 @@
       $("#ph2").hide();
       $("#ph3").hide();
 
-      $( "#p1" ).on("click",function() {
+      $( "#b1" ).on("click",function() {
+      $("#p1").show();
+      $("#ph1").show();
+      $("#p2").hide();
+      $("#p3").hide();
+      $("#ph2").hide();
+      $("#ph3").hide();
+      });
+
+      $( "#n1" ).on("click",function() {
         $("#p1").hide();
         $("#ph1").hide();
         $("#p2").show();
@@ -50,7 +61,16 @@
         $("#p3").hide();
       });
 
-      $( "#p2" ).on("click",function() {
+      $( "#b2" ).on("click",function() {
+        $("#p1").hide();
+        $("#ph1").hide();
+        $("#p2").show();
+        $("#ph2").show();
+        $("#p3").hide();
+        $("#ph3").hide();
+      });
+
+      $( "#n2" ).on("click",function() {
         $("#p1").hide();
         $("#p2").hide();
         $("#ph2").hide();
