@@ -20,9 +20,9 @@
 
 	function setup() {
 	createCanvas(1920, 1080);
-	xi = 0;
-	yi = 0;
-	z = 1;
+	xi = 177;
+	yi = 152;
+	z = .52;
 
 	amphMask = loadImage('../videos/RAmph_Mask.png');
 
@@ -108,6 +108,7 @@
 			var video = window[localStorage.playvid];		 
 			
 			video.play();
+			
 			image(video,960+xi,540+yi,600,337.5); // draw the video frame to canvas
 			pop();
 
