@@ -222,6 +222,18 @@ a.dark:active {
     margin-right: -50%;
     transform: translate(-50%, -50%)	
 }
+.centeredFinal{
+	/*cursor: none;*/
+	margin: 0;
+	font-family: "Trajan Pro 3";
+	font-size: 60px;
+	color: white;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)	
+}
 
 .centeredHor{
 	/*cursor: none;*/
@@ -230,6 +242,15 @@ a.dark:active {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%)	
+}
+
+.centeredHorOutcome{
+	/*cursor: none;*/
+	margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,100%)	
 }
 
 .fightProgress{
@@ -267,7 +288,7 @@ a.dark:active {
 .invIcons{
 	/*cursor: none;*/
 	position: relative;
-	margin-top:300px;
+	margin-top:350px;
 	width:800px;
 }
 
@@ -297,10 +318,10 @@ a.dark:active {
 	font-size:30px;
 	background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    top: -50px;
+    top:40px;
     left: 50%;
     padding:20px;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 0%);
 }
 
 .nextButton{
@@ -445,6 +466,14 @@ iframe{
     transform: translate(50%, -30%); 
 }
 
+.ficoncroutcome{
+    position: absolute;
+    right:50%;
+    padding:10px;
+    width:300px;
+    transform: translate(50%, 10%); 
+}
+
 .ficoncrside{
     position: absolute;
     right:18%;
@@ -452,6 +481,18 @@ iframe{
     padding:10px;
     width:150px;
     transform: translate(50%, -30%); 
+}
+
+.ficoncrfin{
+    position: absolute;
+    right:50%;
+    padding:10px;
+    width:310px;
+    transform: translate(49.45%, 40%); 
+    -webkit-filter: drop-shadow(2px 2px 0 white)
+                  drop-shadow(-2px -2px 0 white);
+  filter: drop-shadow(2px 2px 0 white) 
+          drop-shadow(-2px -2px 0 white);
 }
 
 .fstyles{
@@ -467,11 +508,45 @@ iframe{
 	color: black;
 	font-size:30px;
 	background-color: rgba(255, 255, 255, 0.75);
-
     position: absolute;
-    top: 14.5%;
+    top: 140px;
     left:42%;
     width:720px;
     padding:20px;
     height:480px;
+}
+
+.foutcome{
+		/*cursor: none;*/
+	color: #000000;
+	font-size:30px;
+	background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 600px;
+    left: 50%;
+    padding:20px;
+    transform: translate(-50%, 150px);
+}
+
+.died{
+		/*cursor: none;*/
+	color: #000000;
+	font-size:30px;
+	background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 750px;
+    left: 50%;
+    padding:20px;
+    transform: translate(-50%, -100%);
+}
+
+.finaloutcome{
+		/*cursor: none;*/
+	color: white;
+	font-size:30px;	
+    position: absolute;
+    bottom: 350px;
+    left: 50%;
+    padding:20px;
+    transform: translate(-50%, 150px);
 }

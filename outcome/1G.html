@@ -8,14 +8,21 @@
   <img class = "fullScreenDiv" src="../images/bg/back1.jpg">
   <div class = "fullScreenDiv">
   <body>
-    <h1 class = "centered" id = "outcome"><div id="fighter"></div> Won!</h1>
+    <div class = "ficoncroutcome" id = "ficoncr"></div>
+    <h1 class = "centeredHorOutcome" id ="trajTitleWeapons"><div class = "fighter"></div> Won!
+    </h1>
+    <div class = "foutcome"><div class = "fighter"></div> won the fight. Continue to see where <l id = "gender">he</l> will be invited to next.</div>
     <a class = "dark" href="../inv/InvitationMedium.html"><img id = "nxtbtn" src ="../images/btns/btn_next.png" ></a>
   </body>
 </div>
  <script type="text/javascript">
-  if(localStorage.fighter=="Marcus"){$("#fighter").replaceWith("Marcus");}
-  else if(localStorage.fighter=="Yonatan"){$("#fighter").replaceWith("Yonatan");}
-  else if(localStorage.fighter=="Flavia"){$("#fighter").replaceWith("Flavia");}
-  else if(localStorage.fighter=="Valerius"){$("#fighter").replaceWith("Valerius");}
+  if(localStorage.fighter=="Marcus"){$(".fighter").replaceWith("Marcus");}
+  else if(localStorage.fighter=="Yonatan"){$(".fighter").replaceWith("Yonatan");}
+  else if(localStorage.fighter=="Flavia"){$(".fighter").replaceWith("Flavia");$("#gender").replaceWith("she");}
+  else if(localStorage.fighter=="Valerius"){$(".fighter").replaceWith("Valerius");}
+
+  var imgid;
+  imgid = "../images/portrait/cr/"+localStorage.fighter+"IconCr.png";
+  $('#ficoncr').replaceWith("<img class = 'ficoncroutcome' src="+imgid+">");
   </script>
 </html>

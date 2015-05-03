@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Outcome Small - Bad</title>
+    <title>Outcome Small - Good</title>
     <link type="text/css" rel="stylesheet" href="../style.css">
     <script src="../scripts/jquery-2.1.3.min.js"></script>
   </head>
-  <img class = "fullScreenDiv" src="../images/bg/back2.jpg">
+  <img class = "fullScreenDiv" src="../images/bg/back1.jpg">
   <div class = "fullScreenDiv">
   <body>
-    <h1 class = "centered" id = "outcome"><div id = "fighter"></div> lost. But don't worry, <l id = "gender">he</l> can keep fighting...</h1>
+    <div class = "ficoncroutcome" id = "ficoncr"></div>
+    <h1 class = "centeredHorOutcome" id ="trajTitleWeapons"><div class = "fighter"></div> Lost
+    </h1>
+    <div class = "foutcome"><div class = "fighter"></div> lost the fight. But don't worry, <l id = "gender">he</l> can keep fighting. Continue to see where <l id = "gender">he</l> will be invited to next.</div>
     <a class = "dark" href="../inv/InvitationMedium.html"><img id = "nxtbtn" src ="../images/btns/btn_next.png" ></a>
   </body>
 </div>
  <script type="text/javascript">
-  if(localStorage.fighter=="Marcus"){$("#fighter").replaceWith("Marcus");}
-  else if(localStorage.fighter=="Yonatan"){$("#fighter").replaceWith("Yonatan");}
-  else if(localStorage.fighter=="Flavia"){$("#fighter").replaceWith("Flavia"); $("#gender").replaceWith("she");}
-  else if(localStorage.fighter=="Valerius"){$("#fighter").replaceWith("Valerius");}
-  </script>
+  if(localStorage.fighter=="Marcus"){$(".fighter").replaceWith("Marcus");}
+  else if(localStorage.fighter=="Yonatan"){$(".fighter").replaceWith("Yonatan");}
+  else if(localStorage.fighter=="Flavia"){$(".fighter").replaceWith("Flavia");$("#gender").replaceWith("she");}
+  else if(localStorage.fighter=="Valerius"){$(".fighter").replaceWith("Valerius");}
 
+  var imgid;
+  imgid = "../images/portrait/cr/"+localStorage.fighter+"IconCr.png";
+  $('#ficoncr').replaceWith("<img class = 'ficoncroutcome' src="+imgid+">");
+  </script>
 </html>
