@@ -8,7 +8,7 @@
 		"fullscreen": false,
 		//"scale":-4,
         "frame": true,
-        "toolbar": true
+        "toolbar": false
     }
 
 }

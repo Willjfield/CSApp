@@ -229,7 +229,7 @@ a.dark:active {
 	font-size: 60px;
 	color: white;
     position: absolute;
-    top: 62%;
+    top: 64%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)	
@@ -541,11 +541,13 @@ iframe{
 }
 
 .finaloutcome{
-		/*cursor: none;*/
+	/*cursor: none;*/
+	text-align: justify;
+	margin: 0 auto;
 	color: white;
 	font-size:30px;	
     position: absolute;
-    bottom: 350px;
+    bottom: 260px;
     left: 50%;
     padding:20px;
     transform: translate(-50%, 150px);
