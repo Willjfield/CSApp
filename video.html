@@ -20,8 +20,8 @@
 
 	function setup() {
 	createCanvas(1920, 1080);
-	xi = 177;
-	yi = 152;
+	xi = 0;
+	yi = 0;
 	z = .52;
 
 	amphMask = loadImage('../videos/RAmph_Mask.png');
@@ -96,20 +96,23 @@
 		console.log("z "+z);
 
 			push();
+			imageMode(CENTER);
+			
+			translate(960+xi, 540+yi);
 			scale(z,z);
-			translate(xi, yi);
+			scale(1,-1);
 			//window[] basically does same thing as eval(). It's using the local var string as a variable.
-			imageMode(CORNER);
+			
 			var amphVid = window[localStorage.level];
 			amphVid.play();
-			image(amphVid,0+xi,0+yi);
+			image(amphVid,0,0,1920,1080);
 
-			imageMode(CENTER);
 			var video = window[localStorage.playvid];		 
 			
 			video.play();
 			
-			image(video,960+xi,540+yi,600,337.5); // draw the video frame to canvas
+			image(video,0,0,600,337.5); // draw the video frame to canvas
+			
 			pop();
 
 		}else{
