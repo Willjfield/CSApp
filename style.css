@@ -553,8 +553,9 @@ iframe{
 	color: white;
 	font-size:30px;	
     position: absolute;
-    bottom: 260px;
+    bottom: 340px;
     left: 50%;
     padding:20px;
+    width:1400px;
     transform: translate(-50%, 150px);
 }
