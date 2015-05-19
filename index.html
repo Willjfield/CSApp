@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript">document.body.style.cursor = 'none';</script>
+
 <script type="text/javascript">
 if(sessionStorage.createGUI==null){
 var gui = require('nw.gui');
@@ -9,6 +9,7 @@ sessionStorage.createGUI = 1;
 }
 localStorage.playvid = "f";
 </script>
+<script type="text/javascript">document.body.style.cursor = 'none';</script>
   <head>
     <script src="scripts/jquery-2.1.3.min.js"></script>
     <title>Introduction</title>
@@ -28,10 +29,8 @@ localStorage.playvid = "f";
     </p>
     <img id="introbtn1" src="images/btns/btn_explore.png">
   </p>
-    <p id="instructions"> Pan and zoom to explore the map. <br>Click the amphitheaters to learn more about them.</p>
+    <!--<p id="instructions"> Pan and zoom to explore the map. <br>Click the amphitheaters to learn more about them.</p>-->
     <p id="introp2">Entertainment is an integral part of this culture and one of the most popular forms of entertainment is gladiatorial battle. Hundreds of amphitheaters, both small and large, are built all over the empire to stage executions, beast hunts and gladiatorial fights.
-    <br>
-   
     </p>
      <img id="nxtbtn" src="images/btns/btn_next.png">
     <p id="introp3">Four young gladiators, scattered throughout the empire are now entering this brutal world: <b>Flavia</b>, the gladiatrix, <b>Valerius</b>, the struggling poor, <b>Yonatan</b>, the prisoner of war, and <b>Marcus</b>, the aristocrat.
@@ -54,7 +53,7 @@ localStorage.playvid = "f";
       $("#button").hide();
       $("#nxtbtn").hide();
       $("#nxtbtn2").hide();
-      $("#instructions").hide();
+      //$("#instructions").hide();
        $("#whichone").hide();
 
 
@@ -64,19 +63,21 @@ localStorage.playvid = "f";
         $("#introp2").show();
         $("#introp3").hide();
         $("#map1").hide();
-        $("#instructions").show();
+        //$("#instructions").show();
         $("#nxtbtn").show();
       });
 
       $( "#nxtbtn" ).on("click",function() {
         $("#introp1").hide();
         $("#introp2").hide();
-        $("#instructions").hide();
-        $("#map2").hide();
+        //$("#instructions").hide();
+        //$("#map2").hide();
         $("#introp3").show();       
         $("#nxtbtn2").show();
         $("#whichone").show();
       });
-
+      setTimeout(function() {    
+         window.location.href = "index.html";
+    }, 20000);
     </script>
 </html>
